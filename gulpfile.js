@@ -6,12 +6,12 @@ var watch = require('gulp-watch');
 
 gulp.task('build', function() {
 	browserify({
-		entries: './src/public/scripts/app.jsx',
+		entries: './src/public/scripts/index.js',
 		extensions: ['.jsx'],
 		debug: true
 	}).transform(babelify)
 		.bundle()
-		.pipe(source('bundle.js'))
+		.pipe(source('bundle1.js'))
 		.pipe(gulp.dest('src/public/dist'));
 
 });
