@@ -6,8 +6,7 @@ import About from './scripts/modules/About';
 import Users from './scripts/modules/Users';
 import User from './scripts/modules/User';
 
-
-render((
+ReactDOM.render((
 		<Router history={hashHistory}>
 			<Route path="/" component={App}>
 				<Route path="/users" component={Users}>

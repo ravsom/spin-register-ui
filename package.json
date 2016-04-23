@@ -38,6 +38,6 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --inline --content-base ."
+    "start": "nodemon src/server.js"
   }
 }
