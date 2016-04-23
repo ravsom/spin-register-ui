@@ -1,4 +1,4 @@
 # spin-register-ui
 
-### Using React and React Boiler Plate
+### Using React and React Bootstrap
 
