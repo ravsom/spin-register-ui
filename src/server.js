@@ -33,6 +33,11 @@ app.use(function(req, res, next) {
 	next();
 });
 
+
+app.get('*', (req, res, next)=> {
+	res.sendFile(__dirname + '/public/index.html');
+});
+
 app.listen(app.get('port'), function() {
 	console.log('Server started: http://localhost:' + app.get('port') + '/');
 });
